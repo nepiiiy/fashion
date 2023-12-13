@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
+
+*{
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.category{
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    padding: 34px 0;
+    background-color: #fafafa;
+}
+.link-card{
+    text-decoration: none;
+    color: black;
+}
