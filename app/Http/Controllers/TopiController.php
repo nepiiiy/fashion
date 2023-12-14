@@ -63,7 +63,7 @@ class TopiController extends Controller
         $gambar = $data->gambar_topi;
         Storage::delete('storage/imgtopi/' . $gambar);
         $data->delete();
-        return redirect('admin.topi');
+        return redirect('topi');
     }
 
     public function updateTopi(Request $request, $id)

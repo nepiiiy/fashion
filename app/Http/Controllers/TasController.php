@@ -66,7 +66,7 @@ class TasController extends Controller
         $gambar = $data->gambar_tas;
         Storage::delete('storage/imgtas/' . $gambar);
         $data->delete();
-        return redirect('admin.tas');
+        return redirect('tas');
     }
     public function updateTas(Request $request, $id)
     {

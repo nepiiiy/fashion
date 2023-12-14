@@ -61,7 +61,7 @@ class SepatuController extends Controller
         $gambar = $data->gambar_sepatu;
         Storage::delete('storage/imgsepatu/' . $gambar);
         $data->delete();
-        return redirect('admin.sepatu');
+        return redirect('sepatu');
     }
 
     public function updateSepatu(Request $request, $id)

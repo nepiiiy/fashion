@@ -53,7 +53,7 @@ class EventsController extends Controller
         $gambar = $data->image;
         Storage::delete('storage/imgevent/' . $gambar);
         $data->delete();
-        return redirect('admin.event');
+        return redirect('event');
     }
     public function showEvents($id)
     {

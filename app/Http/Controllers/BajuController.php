@@ -60,7 +60,7 @@ class BajuController extends Controller
         $gambar = $data->gambar_baju;
         Storage::delete('storage/imgbaju/' . $gambar);
         $data->delete();
-        return redirect('admin.baju');
+        return redirect('baju');
     }
 
 public function updateBaju(Request $request, $id)

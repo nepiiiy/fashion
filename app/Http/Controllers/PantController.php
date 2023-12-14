@@ -57,7 +57,7 @@ class PantController extends Controller
         $gambar = $data->gambar_celana;
         Storage::delete('storage/imgcelana/' . $gambar);
         $data->delete();
-        return redirect('admin.celana');
+        return redirect('celana');
     }
 
     public function updateCelana(Request $request, $id)
